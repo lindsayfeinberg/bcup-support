@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bcup — Support</title>
+<style>
+  :root {
+    --rust: #B43D25;
+    --coral: #CF6A54;
+    --dark: #1A1A1A;
+    --text: #2C2C2A;
+    --muted: #6B6B68;
+    --bg: #FAFAF8;
+    --border: #E8E4E0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 17px;
+  }
+
+  header {
+    background: var(--dark);
+    padding: 48px 24px 40px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 6px;
+  }
+
+  header p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #555;
+    font-weight: 400;
+  }
+
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px 80px;
+  }
+
+  section {
+    margin-bottom: 52px;
+    padding-bottom: 52px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .section-label {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: normal;
+    color: var(--dark);
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+
+  p {
+    color: var(--text);
+    margin-bottom: 14px;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin-top: 16px;
+  }
+
+  ul li {
+    padding: 10px 0 10px 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text);
+    position: relative;
+    font-size: 16px;
+  }
+
+  ul li:last-child { border-bottom: 1px solid var(--border); }
+
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    background: var(--coral);
+    border-radius: 50%;
+  }
+
+  a {
+    color: var(--rust);
+    text-decoration: none;
+    border-bottom: 1px solid var(--coral);
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  a:hover {
+    color: var(--coral);
+    border-color: var(--coral);
+  }
+
+  .age-note {
+    background: #F5F0EE;
+    border-left: 3px solid var(--rust);
+    padding: 14px 18px;
+    border-radius: 0 6px 6px 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 20px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Bcup</h1>
+  <p>Support &amp; Privacy</p>
+</header>
+
+<main>
+
+  <section>
+    <div class="section-label">Get in touch</div>
+    <h2>Contact us</h2>
+    <p>If you need help, have a question, or want to reach us about anything related to Bcup, email us directly:</p>
+    <p>
+      <a href="mailto:linster325@gmail.com">linster325@gmail.com</a><br>
+      <a href="mailto:Mmarkusmalone@gmail.com">Mmarkusmalone@gmail.com</a>
+    </p>
+    <p>We aim to respond within 2 business days.</p>
+    <div class="age-note">Bcup is intended for users 21 years of age or older.</div>
+  </section>
+
+  <section>
+    <div class="section-label">Your data</div>
+    <h2>Privacy requests</h2>
+    <p>To request access to or deletion of your personal data, email us at <a href="mailto:linster325@gmail.com">linster325@gmail.com</a> or <a href="mailto:Mmarkusmalone@gmail.com">Mmarkusmalone@gmail.com</a> and include:</p>
+    <ul>
+      <li>The email address associated with your account</li>
+      <li>Your user identifier (if known)</li>
+      <li>A description of your request (access or deletion)</li>
+    </ul>
+    <p style="margin-top:16px;">We will respond within 30 days.</p>
+  </section>
+
+  <section>
+    <div class="section-label">Something wrong?</div>
+    <h2>Reporting a bug</h2>
+    <p>If you run into an issue, the following information helps us investigate quickly:</p>
+    <ul>
+      <li>Your device model (e.g. iPhone 15 Pro)</li>
+      <li>Your iOS version (e.g. iOS 17.4)</li>
+      <li>Approximate date and time the issue occurred</li>
+      <li>Any error message you saw on screen</li>
+    </ul>
+    <p style="margin-top:16px;">Send your report to <a href="mailto:linster325@gmail.com">linster325@gmail.com</a> or <a href="mailto:Mmarkusmalone@gmail.com">Mmarkusmalone@gmail.com</a> with the subject line <strong>Bug Report</strong>.</p>
+  </section>
+
+</main>
+
+<footer>
+  Bcup &nbsp;·&nbsp; 2026
+</footer>
+
+</body>
+</html>
